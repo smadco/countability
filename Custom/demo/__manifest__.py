@@ -9,6 +9,7 @@
     'depends': ['account'],
     'demo': [],
     'data': [
+        'security/ir.model.access.csv',
         'demo.xml',
     ],
     'installable': True,
