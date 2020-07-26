@@ -6,10 +6,11 @@
     'sequence': '10',
     'author': 'aziz',
     'maintainer': 'aziz',
-    'depends': ['account'],
+    'depends': ['account','sale'],
     'demo': [],
     'data': [
         'security/ir.model.access.csv',
+        'data/sequence.xml',
         'demo.xml',
     ],
     'installable': True,

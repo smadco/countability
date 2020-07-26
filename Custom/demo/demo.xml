@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
+        <record id="sale_order_inherit" model="ir.ui.view">
+                <field name="name">sale.order</field>
+                <field name="model">sale.order</field>
+                <field name="inherit_id" ref="sale.view_order_form"/>
+                <field name="arch" type="xml">
+                        <field name ="partner_id" position = "after">
+                                <field name = "demo_name"/>
+                        </field>
+                </field>
+        </record>
         <!--tree view of the patient model -->
         <record id="patient_tree" model="ir.ui.view">
                 <field name="name">hospital.patient.tree</field>
                 <field name="model">hospital.patient</field>
                 <field name="arch" type="xml">
                        <tree string="patients">
+                               <field name="name_seq"/>
                                <field name="demo_name"/>
                                <field name="demo_age"/>
                                <field name="notes"/>
@@ -19,6 +30,11 @@
                 <field name="arch" type="xml">
                        <form string="patients">
                                <sheet>
+                                       <div class="oe_title">
+                                               <h1>
+                                                       <field name="name_seq" readonly="1"/>
+                                               </h1>
+                                       </div>
                                        <group>
                                                <group>
                                                        <field name="demo_name"/>
