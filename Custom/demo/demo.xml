@@ -20,6 +20,7 @@
                                <field name="demo_name"/>
                                <field name="demo_age"/>
                                <field name="notes"/>
+                               <field name="gender"/>
                        </tree>
                 </field>
         </record>
@@ -42,6 +43,7 @@
                                                </group>
                                                <group>
                                                        <field name="demo_age"/>
+                                                       <field name="gender"/>
                                                </group>
                                                <group>
                                                        <field name="notes"/>
@@ -57,9 +59,23 @@
                        </form>
                 </field>
         </record>
-
-
-
+        <record id ="hospital_patient_search" model="ir.ui.view">
+                <field name="name">hospital.patient.search</field>
+                <field name="model">hospital.patient</field>
+                <field name="arch" type="xml">
+                        <search string="Search Patient">
+                                <field name="name" filter_domain="['|',('demo_name','ilike',self),('name_seq','ilike',self)]"/>
+                                <field name="name_seq"/>
+                                <field name="demo_name"/>
+                                <separator />
+                                <filter string="Male" name="male" domain="[('gender','=','male')]"/>
+                                <filter string="Female" name="female" domain="[('gender','=','female')]"/>
+                                <group expand="0" string ="Group By">
+                                        <field string ="gender" name="gender" context="{'group_by':'gender'}"/>
+                                </group>
+                        </search>
+                </field>
+        </record>
 
 
         <!--action of the patients menu-->
