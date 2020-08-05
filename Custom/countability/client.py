@@ -10,7 +10,7 @@ class AccClient(models.Model):
     identification_unique = fields.Char(string='identification unique')
     cnss_regional = fields.Char(string='cnss regional')
     cnss_independent = fields.Char(string='cnss independent')
-    email = fields.Char('email')
+    email = fields.Char(string='email')
     nom_geron = fields.Char(string='nom du geron')
     num_geron = fields.Integer(string='numero geron')
     num_fixe = fields.Integer(string='numero fixe')
