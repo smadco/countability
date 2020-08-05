@@ -16,3 +16,6 @@ class AccClient(models.Model):
     num_fixe = fields.Integer(string='numero fixe')
     num_portable = fields.Integer(string='numero portable')
     activite = fields.Text(string='activite')
+    num_AEP = fields.Integer(string='numero AEP')
+    capitale = fields.Integer(string="capitale en Dinar")
+
