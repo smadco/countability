@@ -20,4 +20,4 @@ class AccClient(models.Model):
     activite = fields.Text(string='activite')
     num_AEP = fields.Integer(string='numero AEP')
     capitale = fields.Integer(string="capitale en Dinar")
-
+    siege_social = fields.Text(string='siege social')
