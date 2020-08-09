@@ -6,4 +6,4 @@ class Categorie(models.Model):
     _description = 'categorie different'
 
 
-piece_comptable_id = fields.One2many('piece.comptable', 'categorie_id')
+    piece_comptable_id = fields.One2many('piece.comptable', 'categorie_id')

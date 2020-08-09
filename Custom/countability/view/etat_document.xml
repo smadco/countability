@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+       <!--tree view of the  model -->
+        <record id="etat_doc_tree" model="ir.ui.view">
+                <field name="name">etat.doc.tree</field>
+                <field name="model">etat.doc</field>
+                <field name="arch" type="xml">
+                       <tree string="etat_doc">
+<!--                               <field name="gestionnaire_id"/>-->
+<!--                               <field name="piece_comptable_id"/>-->
+                       </tree>
+                </field>
+        </record>
+      <!--form view of the  model -->
+        <record id="etat_doc_form" model="ir.ui.view">
+                <field name="name">etat.doc.form</field>
+                <field name="model">etat.doc</field>
+                <field name="arch" type="xml">
+                       <form string="etat_doc">
+                               <sheet>
+
+                                       <group>
+                                               <group>
+<!--                                                       <field name="gestionnaire_id"/>-->
+<!--                                                       <field name="piece_comptable_id"/>-->
+                                               </group>
+
+                                        </group>
+                               </sheet>
+                       </form>
+                </field>
+        </record>
+
+<!--action of the categorie menu-->
+        <record id= "action_etat_doc" model="ir.actions.act_window">
+                <field name="name">etat.doc</field>
+                <field name="type">ir.actions.act_window</field>
+                <field name="res_model">etat.doc</field>
+                <field name="view_mode">tree,form</field>
+                <field name="help" type="html">
+                        <p class="o_view_nocontent_smiling_face">
+                        </p>
+                </field>
+        </record>
+
+
+</odoo>

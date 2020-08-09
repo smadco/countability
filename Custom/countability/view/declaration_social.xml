@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+       <!--tree view of the declaration social model -->
+        <record id="declaration_social_tree" model="ir.ui.view">
+                <field name="name">declaration.social.tree</field>
+                <field name="model">declaration.social</field>
+                <field name="arch" type="xml">
+                       <tree string="declaration_social">
+                               <field name="trimestre"/>
+                               <field name="year"/>
+                               <field name="pay"/>
+                               <field name="client_id"/>
+                       </tree>
+                </field>
+        </record>
+      <!--form view of the declaration social model -->
+        <record id="declaration_social_form" model="ir.ui.view">
+                <field name="name">declaration.social.form</field>
+                <field name="model">declaration.social</field>
+                <field name="arch" type="xml">
+                       <form string="declaration_social">
+                               <sheet>
+
+                                       <group>
+                                               <group>
+                                                       <field name="trimestre"/>
+                                                       <field name="year"/>
+
+                                               </group>
+                                               <group>
+                                                           <field name="pay"/>
+                                                           <field name="client_id"/>
+                                               </group>
+
+                                        </group>
+                               </sheet>
+                       </form>
+                </field>
+        </record>
+
+<!--action of the declaration_social menu-->
+        <record id= "action_declaration_social" model="ir.actions.act_window">
+                <field name="name">declaration.social</field>
+                <field name="type">ir.actions.act_window</field>
+                <field name="res_model">declaration.social</field>
+                <field name="view_mode">tree,form</field>
+                <field name="help" type="html">
+                        <p class="o_view_nocontent_smiling_face">
+                        </p>
+                </field>
+        </record>
+
+
+</odoo>

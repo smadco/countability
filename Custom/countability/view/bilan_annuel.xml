@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+       <!--tree view of the billan_annuel model -->
+        <record id="billan_annuel_tree" model="ir.ui.view">
+                <field name="name">billan.annuel.tree</field>
+                <field name="model">billan.annuel</field>
+                <field name="arch" type="xml">
+                       <tree string="billan_annuel">
+                               <field name="total_pay"/>
+                       </tree>
+                </field>
+        </record>
+      <!--form view of the billan_annuel model -->
+        <record id="billan_annuel_form" model="ir.ui.view">
+                <field name="name">billan.annuel.form</field>
+                <field name="model">billan.annuel</field>
+                <field name="arch" type="xml">
+                       <form string="billan_annuel">
+                               <sheet>
+
+                                       <group>
+                                               <group>
+                                                       <field name="total_pay"/>
+                                               </group>
+
+                                        </group>
+                               </sheet>
+                       </form>
+                </field>
+        </record>
+
+<!--action of the AcompteProvisionnel menu-->
+        <record id= "action_billan_annuel" model="ir.actions.act_window">
+                <field name="name">BillanAnnuel</field>
+                <field name="type">ir.actions.act_window</field>
+                <field name="res_model">billan.annuel</field>
+                <field name="view_mode">tree,form</field>
+                <field name="help" type="html">
+                        <p class="o_view_nocontent_smiling_face">
+                        </p>
+                </field>
+        </record>
+
+
+</odoo>

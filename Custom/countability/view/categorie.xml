@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+       <!--tree view of the categorie model -->
+        <record id="categorie_tree" model="ir.ui.view">
+                <field name="name">categorie.tree</field>
+                <field name="model">categorie</field>
+                <field name="arch" type="xml">
+                       <tree string="categorie">
+                               <field name="piece_comptable_id"/>
+                       </tree>
+                </field>
+        </record>
+      <!--form view of the categorie model -->
+        <record id="categorie_form" model="ir.ui.view">
+                <field name="name">categorie.form</field>
+                <field name="model">categorie</field>
+                <field name="arch" type="xml">
+                       <form string="categorie">
+                               <sheet>
+
+                                       <group>
+                                               <group>
+                                                       <field name="piece_comptable_id"/>
+                                               </group>
+
+                                        </group>
+                               </sheet>
+                       </form>
+                </field>
+        </record>
+
+<!--action of the categorie menu-->
+        <record id= "action_categorie" model="ir.actions.act_window">
+                <field name="name">categorie</field>
+                <field name="type">ir.actions.act_window</field>
+                <field name="res_model">categorie</field>
+                <field name="view_mode">tree,form</field>
+                <field name="help" type="html">
+                        <p class="o_view_nocontent_smiling_face">
+                        </p>
+                </field>
+        </record>
+
+
+</odoo>

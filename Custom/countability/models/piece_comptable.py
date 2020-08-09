@@ -6,5 +6,5 @@ class PieceComptable(models.Model):
     _description = 'piece comptable'
 
 
-etat_document_id = fields.Many2one('Etat', 'etat')
-categorie_id = fields.Many2one('categorie', 'Categorie')
+    #etat_document_id = fields.Many2one('Etat', 'etat')
+    categorie_id = fields.Many2one('categorie', 'Categorie')

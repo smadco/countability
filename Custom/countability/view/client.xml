@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+       <!--tree view of the client model -->
+        <record id="client_tree" model="ir.ui.view">
+                <field name="name">acc.client.tree</field>
+                <field name="model">acc.client</field>
+                <field name="arch" type="xml">
+                       <tree string="client">
+                               <field name="client_name"/>
+                               <field name="num_matricule_fiscal"/>
+                               <field name="identification_unique"/>
+                               <field name="cnss_regional"/>
+                               <field name="cnss_independent"/>
+                               <field name="email"/>
+                               <field name="nom_geron"/>
+                               <field name="num_geron"/>
+                               <field name="num_fixe"/>
+                               <field name="num_portable"/>
+                               <field name="image"/>
+                               <field name="notes"/>
+                               <field name="activite"/>
+                               <field name="num_AEP"/>
+                               <field name="capitale"/>
+                               <field name="siege_social"/>
+                       </tree>
+                </field>
+        </record>
+      <!--form view of the client model -->
+        <record id="client_form" model="ir.ui.view">
+                <field name="name">acc.client.form</field>
+                <field name="model">acc.client</field>
+                <field name="arch" type="xml">
+                       <form string="client">
+                               <sheet>
+
+                                       <group>
+                                               <group>
+                                                       <field name="client_name"/>
+                                                       <field name="num_matricule_fiscal"/>
+                                                       <field name="identification_unique"/>
+                                                       <field name="cnss_regional"/>
+                                               </group>
+                                               <group>
+                                                       <field name="cnss_independent"/>
+                                                       <field name="email"/>
+                                                       <field name="nom_geron"/>
+                                                       <field name="num_geron"/>
+                                               </group>
+                                               <group>
+                                                       <field name="num_fixe"/>
+                                                       <field name="num_portable"/>
+                                                       <field name="image"/>
+                                                       <field name="notes"/>
+                                               </group>
+                                               <group>
+                                                      <field name="activite"/>
+                                                      <field name="num_AEP"/>
+                                                      <field name="capitale"/>
+                                                      <field name="siege_social"/>
+                                               </group>
+                                        </group>
+                               </sheet>
+                       </form>
+                </field>
+        </record>
+
+<!--action of the client menu-->
+        <record id= "action_client" model="ir.actions.act_window">
+                <field name="name">Client</field>
+                <field name="type">ir.actions.act_window</field>
+                <field name="res_model">acc.client</field>
+                <field name="view_mode">tree,form</field>
+                <field name="help" type="html">
+                        <p class="o_view_nocontent_smiling_face">
+                                Create first client !
+                        </p>
+                </field>
+        </record>
+
+    <menuitem id ="countability_root" name="countability" sequence="0" web_icon="countability,static/description/icon.png"/>
+    <menuitem id ="countability_client" name="client" parent="countability_root" action="action_client"/>
+
+</odoo>

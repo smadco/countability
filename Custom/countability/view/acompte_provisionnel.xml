@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+       <!--tree view of the acomte_provisionnel model -->
+        <record id="acomte_provisionnel_tree" model="ir.ui.view">
+                <field name="name">acompte.prov.tree</field>
+                <field name="model">acompte.prov</field>
+                <field name="arch" type="xml">
+                       <tree string="acompte_provisionnel">
+                               <field name="statut"/>
+                               <field name="pay"/>
+                       </tree>
+                </field>
+        </record>
+      <!--form view of the acomte_provisionnel model -->
+        <record id="acomte_provisionnel_form" model="ir.ui.view">
+                <field name="name">acompte.prov.form</field>
+                <field name="model">acompte.prov</field>
+                <field name="arch" type="xml">
+                       <form string="acomte_provisionnel">
+                               <sheet>
+
+                                       <group>
+                                               <group>
+                                                       <field name="statut"/>
+                                                       <field name="pay"/>
+                                               </group>
+
+                                        </group>
+                               </sheet>
+                       </form>
+                </field>
+        </record>
+
+<!--action of the AcompteProvisionnel menu-->
+        <record id= "action_client" model="ir.actions.act_window">
+                <field name="name">AcompteProvisionnel</field>
+                <field name="type">ir.actions.act_window</field>
+                <field name="res_model">acompte.prov</field>
+                <field name="view_mode">tree,form</field>
+                <field name="help" type="html">
+                        <p class="o_view_nocontent_smiling_face">
+                        </p>
+                </field>
+        </record>
+
+
+</odoo>

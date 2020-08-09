@@ -12,6 +12,5 @@ class AcompteProvisionnel(models.Model):
             if rec.statut > 3 or rec.statut <= 0:
                 raise ValidationError(_('statut incorrect.'))
 
-
-statut = fields.Integer(string='statut d acompte')
-pay= fields.Integer(string='valeur  ')
+    statut = fields.Integer(string='statut d acompte')
+    pay = fields.Integer(string='valeur  ')
