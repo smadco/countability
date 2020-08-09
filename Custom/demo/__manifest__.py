@@ -12,7 +12,7 @@
         'security/ir.model.access.csv',
         'data/sequence.xml',
         'views/demo.xml',
-        'views/appointment.xml',
+
 
     ],
     'installable': True,
