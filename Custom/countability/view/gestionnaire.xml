@@ -43,5 +43,5 @@
                 </field>
         </record>
 
-
+    <menuitem id ="countability_gestionnaire" name="gestionnaire" parent="countability_root" action="action_gestionnaire"/>
 </odoo>

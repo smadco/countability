@@ -1,0 +1,10 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_acc_client,access.acc.client,model_acc_client,,1,1,1,1
+access_acompte_prov,access.acompte.prov,model_acompte_prov,,1,1,1,1
+access_billan_annuel,access.billan.annuel,model_billan_annuel,,1,1,1,1
+access_categorie,access.categorie,model_categorie,,1,1,1,1
+access_declaration_mensuelle,access.declaration.mensuelle,model_declaration_mensuelle,,1,1,1,1
+access_declaration_social,access.declaration.social,model_declaration_social,,1,1,1,1
+access_etat_doc,access.etat.doc,model_etat_doc,,1,1,1,1
+access_gestionnaire,access.gestionnaire,model_gestionnaire,,1,1,1,1
+access_piece_comptable,access.piece.comptable,model_piece_comptable,,1,1,1,1

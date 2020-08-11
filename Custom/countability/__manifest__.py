@@ -18,6 +18,7 @@
         'view/gestionnaire.xml',
         'view/piece_comptable.xml',
         'view/declaration_social.xml',
+        'security/ir.model.access.csv',
 
 
 

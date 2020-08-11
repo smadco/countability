@@ -32,7 +32,7 @@
         </record>
 
 <!--action of the AcompteProvisionnel menu-->
-        <record id= "action_client" model="ir.actions.act_window">
+        <record id= "action_acompte_provisionnel" model="ir.actions.act_window">
                 <field name="name">AcompteProvisionnel</field>
                 <field name="type">ir.actions.act_window</field>
                 <field name="res_model">acompte.prov</field>
@@ -43,5 +43,5 @@
                 </field>
         </record>
 
-
+    <menuitem id ="countability_acompte_provisionnel" name="acompte provisionnel" parent="countability_root" action="action_acompte_provisionnel"/>
 </odoo>
