@@ -43,5 +43,5 @@
                 </field>
         </record>
 
-    <menuitem id ="countability_etat_doc" name="etat doc" parent="countability_root" action="action_etat_doc"/>
+    <menuitem id ="countability_etat_doc" name="etat doc" parent="Config_root" action="action_etat_doc"/>
 </odoo>

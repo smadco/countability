@@ -33,7 +33,7 @@
 
 <!--action of the AcompteProvisionnel menu-->
         <record id= "action_acompte_provisionnel" model="ir.actions.act_window">
-                <field name="name">AcompteProvisionnel</field>
+                <field name="name">Acompte Provisionnel</field>
                 <field name="type">ir.actions.act_window</field>
                 <field name="res_model">acompte.prov</field>
                 <field name="view_mode">tree,form</field>
@@ -42,6 +42,6 @@
                         </p>
                 </field>
         </record>
-
-    <menuitem id ="countability_acompte_provisionnel" name="acompte provisionnel" parent="countability_root" action="action_acompte_provisionnel"/>
+    <menuitem id ="Documents_root" name="Documents" parent="countability_root" />
+    <menuitem id ="countability_acompte_provisionnel" name="acompte provisionnel" parent="Documents_root" action="action_acompte_provisionnel"/>
 </odoo>

@@ -50,5 +50,5 @@
                 </field>
         </record>
 
-    <menuitem id ="countability_declaration_social" name="declaration social" parent="countability_root" action="action_declaration_social"/>
+    <menuitem id ="countability_declaration_social" name="declaration social" parent="Documents_root" action="action_declaration_social"/>
 </odoo>

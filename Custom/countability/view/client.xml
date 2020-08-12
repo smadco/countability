@@ -78,6 +78,7 @@
         </record>
 
     <menuitem id ="countability_root" name="countability" sequence="0" web_icon="countability,static/description/icon.png"/>
-    <menuitem id ="countability_client" name="client" parent="countability_root" action="action_client"/>
+    <menuitem id ="Actor_root" name="Actor" parent="countability_root"/>
+    <menuitem id ="countability_client" name="client" parent="Actor_root" action="action_client"/>
 
 </odoo>

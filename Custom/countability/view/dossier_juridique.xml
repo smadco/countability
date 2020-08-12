@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+       <!--tree view of the dossier_jur model -->
+        <record id="dossier_jur_tree" model="ir.ui.view">
+                <field name="name">dossier.juridique.tree</field>
+                <field name="model">dossier.juridique</field>
+                <field name="arch" type="xml">
+                       <tree string="dossier_juridique">
+                               <field name="patent"/>
+                               <field name="RC"/>
+                               <field name="statu"/>
+                               <field name="cer_cnss"/>
+                               <field name="cer_travail"/>
+                       </tree>
+                </field>
+        </record>
+      <!--form view of the dossier_jur model -->
+        <record id="dossier_juridique_form" model="ir.ui.view">
+                <field name="name">dossier.juridique.form</field>
+                <field name="model">dossier.juridique</field>
+                <field name="arch" type="xml">
+                       <form string="dossier_juridique">
+                               <sheet>
+
+                                       <group>
+                                               <group>
+                                                   <field name="patent"/>
+                                                   <field name="RC"/>
+                                                   <field name="statu"/>
+                                               </group>
+                                               <group>
+                                                   <field name="cer_cnss"/>
+                                                   <field name="cer_travail"/>
+                                               </group>
+                                       </group>
+                               </sheet>
+                       </form>
+                </field>
+        </record>
+
+<!--action of the dossier.jur menu-->
+        <record id= "action_dossier_juridique" model="ir.actions.act_window">
+                <field name="name">dossier_juridique</field>
+                <field name="type">ir.actions.act_window</field>
+                <field name="res_model">dossier.juridique</field>
+                <field name="view_mode">tree,form</field>
+                <field name="help" type="html">
+                        <p class="o_view_nocontent_smiling_face">
+                        </p>
+                </field>
+        </record>
+    <menuitem id ="dossier_jur" name="Dossier Jur" parent="Documents_root" action="action_categorie"/>
+</odoo>

@@ -31,7 +31,7 @@
 
 <!--action of the AcompteProvisionnel menu-->
         <record id= "action_billan_annuel" model="ir.actions.act_window">
-                <field name="name">BillanAnnuel</field>
+                <field name="name">Billan Annuel</field>
                 <field name="type">ir.actions.act_window</field>
                 <field name="res_model">billan.annuel</field>
                 <field name="view_mode">tree,form</field>
@@ -41,5 +41,5 @@
                 </field>
         </record>
 
-    <menuitem id ="countability_billan_annuel" name="billan annuel" parent="countability_root" action="action_billan_annuel"/>
+    <menuitem id ="countability_billan_annuel" name="billan annuel" parent="Documents_root" action="action_billan_annuel"/>
 </odoo>

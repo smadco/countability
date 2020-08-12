@@ -49,5 +49,5 @@
                 </field>
         </record>
 
-    <menuitem id ="countability_declaration_mensuelle" name="declaration mensuelle" parent="countability_root" action="action_declaration_mensuelle"/>
+    <menuitem id ="countability_declaration_mensuelle" name="declaration mensuelle" parent="Documents_root" action="action_declaration_mensuelle"/>
 </odoo>

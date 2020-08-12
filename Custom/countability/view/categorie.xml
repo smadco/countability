@@ -40,6 +40,6 @@
                         </p>
                 </field>
         </record>
-
-    <menuitem id ="countability_categorie" name="categorie" parent="countability_root" action="action_categorie"/>
+    <menuitem id ="Config_root" name="Configuration" parent="countability_root"/>
+    <menuitem id ="countability_categorie" name="categorie" parent="Config_root" action="action_categorie"/>
 </odoo>
