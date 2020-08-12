@@ -9,16 +9,16 @@
     'depends': [],
     'demo': [],
     'data': [
-        'view/acompte_provisionnel.xml',
-        'view/bilan_annuel.xml',
-        'view/categorie.xml',
-        'view/client.xml',
-        'view/declaration_mensuelle.xml',
-        'view/etat_document.xml',
-        'view/gestionnaire.xml',
-        'view/piece_comptable.xml',
-        'view/declaration_social.xml',
-        'security/ir.model.access.csv',
+         'view/acompte_provisionnel.xml',
+         'view/bilan_annuel.xml',
+         'view/categorie.xml',
+         'view/client.xml',
+         'view/declaration_mensuelle.xml',
+         'view/etat_document.xml',
+         'view/gestionnaire.xml',
+         'view/piece_comptable.xml',
+         'view/declaration_social.xml',
+         'security/ir.model.access.csv',
 
 
 
