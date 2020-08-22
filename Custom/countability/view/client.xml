@@ -22,6 +22,8 @@
                                <field name="num_AEP"/>
                                <field name="capitale"/>
                                <field name="siege_social"/>
+                               <field name="gestionnaire_id"/>
+
                        </tree>
                 </field>
         </record>
@@ -53,10 +55,11 @@
                                                        <field name="notes"/>
                                                </group>
                                                <group>
-                                                      <field name="activite"/>
-                                                      <field name="num_AEP"/>
-                                                      <field name="capitale"/>
-                                                      <field name="siege_social"/>
+                                                   <field name="activite"/>
+                                                   <field name="num_AEP"/>
+                                                   <field name="capitale"/>
+                                                   <field name="siege_social"/>
+                                                   <field name="gestionnaire_id"/>
                                                </group>
                                         </group>
                                </sheet>

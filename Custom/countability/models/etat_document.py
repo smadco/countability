@@ -12,5 +12,5 @@ class Etat(models.Model):
     _description = 'etat document'
 
 
-    #gestionnaire_id = fields.One2many('gestionnaire', 'etat_document_id')
-    #piece_comptable_id = fields.One2many('piece.comptable', 'etat_document_id')
+    # gestionnaire_id = fields.One2many('gestionnaire', 'etat_document_id')
+    # piece_comptable_id = fields.One2many('piece.comptable', 'etat_document_id')

@@ -22,3 +22,5 @@ class AccClient(models.Model):
     num_AEP = fields.Integer(string='numero AEP')
     capitale = fields.Integer(string="capitale en Dinar")
     siege_social = fields.Text(string='siege social')
+
+    gestionnaire_id = fields.Many2one(comodel_name='gestionnaire')

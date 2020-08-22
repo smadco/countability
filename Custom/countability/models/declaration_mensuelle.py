@@ -19,6 +19,7 @@ class DeclarationMensuelle(models.Model):
                 raise ValidationError(_('année incorrect.'))
 
     pay = fields.Integer(string='valeur a payé')
-    client_id = fields.Many2one('acc.client', 'client_name')
+    client_id = fields.Many2one('acc.client', 'client name')
     month = fields.Integer(string='mois')
     year = fields.Integer(string='année')
+    declaration_mensuelle_id = fields.Many2one(comodel_name='piece.comptable')

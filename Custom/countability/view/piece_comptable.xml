@@ -6,8 +6,8 @@
                 <field name="model">piece.comptable</field>
                 <field name="arch" type="xml">
                        <tree string="piece_comptable">
-<!--                               <field name="etat_document_id"/>-->
-<!--                               <field name="categorie_id"/>-->
+                               <field name="piece_comptable_id"/>
+                               <field name="categorie_id"/>
                        </tree>
                 </field>
         </record>
@@ -21,8 +21,8 @@
 
                                        <group>
                                                <group>
-<!--                                                       <field name="etat_document_id"/>-->
-<!--                                                       <field name="categorie_id"/>-->
+                                                       <field name="piece_comptable_id"/>
+                                                       <field name="categorie_id"/>
                                                </group>
 
                                         </group>
