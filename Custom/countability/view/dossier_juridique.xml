@@ -31,6 +31,7 @@
                                                <group>
                                                    <field name="cer_cnss"/>
                                                    <field name="cer_travail"/>
+                                                   <field name="clients_jur_ids"/>
                                                </group>
                                        </group>
                                </sheet>
@@ -49,5 +50,5 @@
                         </p>
                 </field>
         </record>
-    <menuitem id ="dossier_jur" name="Dossier Jur" parent="Documents_root" action="action_categorie"/>
+    <menuitem id ="dossier_jur" name="Dossier Jur" parent="Documents_root" action="action_dossier_juridique"/>
 </odoo>

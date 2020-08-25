@@ -7,6 +7,7 @@
                 <field name="arch" type="xml">
                        <tree string="gestionnaire">
                                <field name="gestionnaire_name"/>
+                               <field name="etat_id"/>
                        </tree>
                 </field>
         </record>
@@ -21,7 +22,7 @@
                                        <group>
                                                <group>
                                                        <field name="gestionnaire_name"/>
-
+                                                       <field name="etat_id"/>
                                                </group>
 
                                         </group>

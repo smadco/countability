@@ -1,47 +1,55 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
        <!--tree view of the piece comptable model -->
-        <record id="piece_comptable_tree" model="ir.ui.view">
-                <field name="name">piece.comptable.tree</field>
-                <field name="model">piece.comptable</field>
-                <field name="arch" type="xml">
-                       <tree string="piece_comptable">
-                               <field name="piece_comptable_id"/>
-                               <field name="categorie_id"/>
-                       </tree>
-                </field>
-        </record>
+    <record id="piece_comptable_tree" model="ir.ui.view">
+        <field name="name">piece.comptable.tree</field>
+        <field name="model">piece.comptable</field>
+        <field name="arch" type="xml">
+            <tree string="piece_comptable">
+<!--                               <field name="etat_document_id"/>-->
+
+                <field name="piece_name"/>
+                <field name="categorie_id"/>
+                <field name="declration_mensuelle_id"/>
+
+            </tree>
+        </field>
+    </record>
       <!--form view of the  model -->
-        <record id="piece_comptable_form" model="ir.ui.view">
-                <field name="name">piece.comptable.form</field>
-                <field name="model">piece.comptable</field>
-                <field name="arch" type="xml">
-                       <form string="piece_comptable">
-                               <sheet>
+    <record id="piece_comptable_form" model="ir.ui.view">
+        <field name="name">piece.comptable.form</field>
+        <field name="model">piece.comptable</field>
+        <field name="arch" type="xml">
+            <form string="piece_comptable">
+                <sheet>
 
-                                       <group>
-                                               <group>
-                                                       <field name="piece_comptable_id"/>
-                                                       <field name="categorie_id"/>
-                                               </group>
+                    <group>
+                        <group>
+<!--                                                       <field name="etat_document_id"/>-->
+                            <field name="piece_name"/>
+                            <field name="categorie_id"/>
+                            <field name="declration_mensuelle_id"/>
 
-                                        </group>
-                               </sheet>
-                       </form>
-                </field>
-        </record>
+
+                        </group>
+
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
 
 <!--action of the piece_comptable menu-->
-        <record id= "action_piece_comptable" model="ir.actions.act_window">
-                <field name="name">piece.comptable</field>
-                <field name="type">ir.actions.act_window</field>
-                <field name="res_model">piece.comptable</field>
-                <field name="view_mode">tree,form</field>
-                <field name="help" type="html">
-                        <p class="o_view_nocontent_smiling_face">
+    <record id= "action_piece_comptable" model="ir.actions.act_window">
+        <field name="name">piece.comptable</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">piece.comptable</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
                         </p>
-                </field>
-        </record>
+        </field>
+    </record>
 
     <menuitem id ="countability_piece_comptable" name="piece comptable" parent="Documents_root" action="action_piece_comptable"/>
 </odoo>

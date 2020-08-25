@@ -15,7 +15,7 @@
          'view/categorie.xml',
          'view/declaration_mensuelle.xml',
          'view/etat_document.xml',
-         # 'view/dossier_juridique.xml',
+         'view/dossier_juridique.xml',
          'view/gestionnaire.xml',
          'view/piece_comptable.xml',
          'view/declaration_social.xml',

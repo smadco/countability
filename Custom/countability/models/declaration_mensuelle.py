@@ -15,11 +15,13 @@ class DeclarationMensuelle(models.Model):
     @api.constrains('year')
     def check_year(self):
         for rec in self:
-            if rec.year >= 12 or rec.year <= 0:
+            if rec.year >= 2030 or rec.year <= 2019:
                 raise ValidationError(_('année incorrect.'))
 
     pay = fields.Integer(string='valeur a payé')
-    client_id = fields.Many2one('acc.client', 'client name')
+    client_id = fields.Many2one('acc.client', 'client_name')
     month = fields.Integer(string='mois')
     year = fields.Integer(string='année')
-    declaration_mensuelle_id = fields.Many2one(comodel_name='piece.comptable')
+    piece_comptable_ids = fields.One2many(comodel_name='piece.comptable',inverse_name='declration_mensuelle_id')
+    # client_ids = fields.One2many(comodel_name='acc.client',inverse_name='gestionnaire_id')
+    declaration_mensuelle_id = fields.Many2one(comodel_name='Acc.client')

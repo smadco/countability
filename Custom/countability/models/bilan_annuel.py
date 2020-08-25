@@ -6,3 +6,4 @@ class BilanAnnuel(models.Model):
     _description = 'billan annuel'
 
     total_pay = fields.Integer(string='payment total')
+    bilan_annuel_id = fields.Many2one(comodel_name='Acc.client')

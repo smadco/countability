@@ -23,7 +23,10 @@
                                <field name="capitale"/>
                                <field name="siege_social"/>
                                <field name="gestionnaire_id"/>
-
+                               <field name="piece_comptable_id"/>
+                               <field name="client_acompte_previsionnel_ids"/>
+                               <field name="client_bilan_annuel_ids"/>
+                               <field name="client_declaration_social_ids"/>
                        </tree>
                 </field>
         </record>
@@ -41,18 +44,21 @@
                                                        <field name="num_matricule_fiscal"/>
                                                        <field name="identification_unique"/>
                                                        <field name="cnss_regional"/>
+                                                       <field name="client_declaration_social_ids"/>
                                                </group>
                                                <group>
                                                        <field name="cnss_independent"/>
                                                        <field name="email"/>
                                                        <field name="nom_geron"/>
                                                        <field name="num_geron"/>
+                                                       <field name="client_bilan_annuel_ids"/>
                                                </group>
                                                <group>
                                                        <field name="num_fixe"/>
                                                        <field name="num_portable"/>
                                                        <field name="image"/>
                                                        <field name="notes"/>
+                                                       <field name="client_bilan_annuel_ids"/>
                                                </group>
                                                <group>
                                                    <field name="activite"/>
@@ -60,8 +66,14 @@
                                                    <field name="capitale"/>
                                                    <field name="siege_social"/>
                                                    <field name="gestionnaire_id"/>
+                                                   <field name="piece_comptable_id"/>
                                                </group>
                                         </group>
+                                   <notebook>
+                                       <page string = "Liste des ">
+                                           <field name="dossier_juridique_ids"/>
+                                       </page>
+                                   </notebook>
                                </sheet>
                        </form>
                 </field>

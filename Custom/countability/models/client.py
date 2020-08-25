@@ -24,3 +24,9 @@ class AccClient(models.Model):
     siege_social = fields.Text(string='siege social')
 
     gestionnaire_id = fields.Many2one(comodel_name='gestionnaire')
+    dossier_juridique_ids = fields.One2many(comodel_name='dossier.juridique', inverse_name='clients_jur_ids')
+    piece_comptable_id = fields.One2many(comodel_name='piece.comptable', inverse_name='client_piece_comptable_ids')
+    client_declaration_mensuelle_ids = fields.One2many(comodel_name='declaration.mensuelle', inverse_name='declaration_mensuelle_id')
+    client_acompte_previsionnel_ids = fields.One2many(comodel_name='acompte.prov', inverse_name='acompte_previsionnel_id')
+    client_bilan_annuel_ids = fields.One2many(comodel_name='billan.annuel', inverse_name='bilan_annuel_id')
+    client_declaration_social_ids = fields.One2many(comodel_name='declaration.social', inverse_name='declaration_social_id')

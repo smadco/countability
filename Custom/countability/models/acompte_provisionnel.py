@@ -14,3 +14,4 @@ class AcompteProvisionnel(models.Model):
 
     statut = fields.Integer(string='statut d acompte')
     pay = fields.Integer(string='valeur  ')
+    acompte_previsionnel_id = fields.Many2one(comodel_name='Acc.client')

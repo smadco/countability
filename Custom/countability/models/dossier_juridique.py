@@ -10,3 +10,4 @@ class DossierJuridique(models.Model):
     statu = fields.Char(string='statu')
     cer_cnss = fields.Binary(string='certificat d"attitude CNSS')
     cer_travail = fields.Binary(string='certificat de travail')
+    clients_jur_ids = fields.Many2one(comodel_name='Acc.client')

@@ -22,4 +22,5 @@ class DeclarationSocial(models.Model):
     year = fields.Integer(string='année')
     pay = fields.Integer(string='valeur')
     client_id = fields.Many2one('acc.client', 'client_name')
-     # etat = fields.Text(string='état de declaration')
+    # etat = fields.Text(string='état de declaration')
+    declaration_social_id = fields.Many2one(comodel_name='Acc.client')
