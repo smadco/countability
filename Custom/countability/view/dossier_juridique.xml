@@ -11,6 +11,7 @@
                                <field name="statu"/>
                                <field name="cer_cnss"/>
                                <field name="cer_travail"/>
+                            <field name="clients_jur_ids"/>
                        </tree>
                 </field>
         </record>

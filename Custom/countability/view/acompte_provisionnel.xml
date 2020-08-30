@@ -8,6 +8,7 @@
                        <tree string="acompte_provisionnel">
                                <field name="statut"/>
                                <field name="pay"/>
+                               <field name="acompte_previsionnel_id"/>
                        </tree>
                 </field>
         </record>
@@ -23,6 +24,7 @@
                                                <group>
                                                        <field name="statut"/>
                                                        <field name="pay"/>
+                                                       <field name="acompte_previsionnel_id"/>
                                                </group>
 
                                         </group>

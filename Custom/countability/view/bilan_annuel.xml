@@ -21,6 +21,8 @@
                                        <group>
                                                <group>
                                                        <field name="total_pay"/>
+                                                       <field name="year"/>
+                                                       <field name="status"/>
                                                </group>
 
                                         </group>

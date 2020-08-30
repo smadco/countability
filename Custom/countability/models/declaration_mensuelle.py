@@ -6,6 +6,7 @@ class DeclarationMensuelle(models.Model):
     _name = 'declaration.mensuelle'
     _description = 'declaration mensuelle'
 
+
     @api.constrains('month')
     def check_month(self):
         for rec in self:

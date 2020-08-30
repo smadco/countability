@@ -58,7 +58,6 @@
                                                        <field name="num_portable"/>
                                                        <field name="image"/>
                                                        <field name="notes"/>
-                                                       <field name="client_bilan_annuel_ids"/>
                                                </group>
                                                <group>
                                                    <field name="activite"/>
@@ -71,7 +70,7 @@
                                         </group>
                                    <notebook>
                                        <page string = "Liste des ">
-                                           <field name="dossier_juridique_ids"/>
+<!--                                         <field name="'clients_jur_ids'"/>-->
                                        </page>
                                    </notebook>
                                </sheet>

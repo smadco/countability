@@ -16,3 +16,4 @@ class Etat(models.Model):
     #piece_comptable_id = fields.One2many('piece.comptable', 'etat_document_id')
     piece_comptable_etat_ids = fields.One2many(comodel_name='piece.comptable',
                                                     inverse_name='etat_id')
+    name = fields.Char('name')
